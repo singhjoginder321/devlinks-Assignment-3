@@ -245,3 +245,27 @@ button[type="submit"] {
 .form-content {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+
+@media (max-width: 600px) {
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .main-section {
+    flex-direction: column;
+  }
+
+  .left {
+    width: 95%;
+  }
+
+  .right {
+    width: 95%;
+  }
+
+  button[type="submit"] {
+    width: 30%;
+  }
+}

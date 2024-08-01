@@ -53,3 +53,15 @@
   background-color: #6c63ff;
   color: #fff;
 }
+
+@media (max-width: 600px) {
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  #navbar-preview a {
+    margin: 0 10px;
+  }
+}

@@ -95,3 +95,19 @@ h2 {
   margin-bottom: 20px;
   color: #333;
 }
+
+@media (max-width: 600px) {
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  #navbar .logo {
+    display: none;
+  }
+
+  #navbar ul {
+    margin-left: -80px;
+  }
+}
