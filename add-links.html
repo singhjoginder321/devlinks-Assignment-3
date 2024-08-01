@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Links</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/add-links.css" />
+    <!-- <link rel="stylesheet" href="css/profile.css" /> -->
+    <link rel="stylesheet" href="css/profile-container.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+  </head>
+  <body>
+    <div class="full-section">
+      <header id="navbar">
+        <nav id="navbar-id">
+          <div class="logo">
+            <img src="images/devlinks-logo.svg" alt="DevLinks Logo" />
+          </div>
+
+          <ul>
+            <li>
+              <a href="add-links.html">
+                <img
+                  src="images/link-icon.png"
+                  alt="Links Icon"
+                  class="link-icon"
+                />
+                Links
+              </a>
+            </li>
+            <li>
+              <a href="profile.html">
+                <img
+                  src="images/user-icon.png"
+                  alt="Links Icon"
+                  class="link-icon"
+                />
+                Profile Details
+              </a>
+            </li>
+
+            <li><a class="preview" href="share.html">Preview</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="main-section">
+        <div class="left">
+          <div class="smartphone">
+            <div class="profile-container">
+              <img src="images/profile-picture.jpeg" alt="Profile Picture" />
+              <span class="name">Joginder Singh</span>
+              <span class="email">jogidnersingh@gmail.com</span>
+              <ul class="links">
+                <li><a href="#" class="github">GitHub</a></li>
+                <li><a href="#" class="linkedin">LinkedIn</a></li>
+                <li><a href="#" class="youtube">YouTube</a></li>
+                <li><a href="#" class="facebook">Facebook</a></li>
+                <li><a href="#" class="gitlab">GitLab</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="container">
+            <h2>Customize your links</h2>
+            <span class="add-remove-para"
+              >Add/edit/remove links below and then share all your profiles with
+              the world!</span
+            >
+            <button id="add-link-btn">+ Add new link</button>
+            <form id="links-form">
+              <!-- Links will be added here dynamically -->
+              <span class="form-content"
+                >Use the “Add new link” button to get started. Once you have
+                more than one link, you can reorder and edit them. We're here to
+                help you share your profiles with everyone!</span
+              >
+            </form>
+            <button type="submit" form="links-form" class="save-btn">
+              Save
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <script>
+      // Load the navbar
+      fetch("navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+        });
+
+      let linkIndex = 0;
+
+      document
+        .getElementById("add-link-btn")
+        .addEventListener("click", function () {
+          linkIndex++;
+          const linkForm = document.getElementById("links-form");
+          const newLink = document.createElement("div");
+          newLink.classList.add("link");
+          newLink.innerHTML = `
+                <label for="platform-${linkIndex}">Platform</label>
+                <select id="platform-${linkIndex}">
+                    <option value="github">GitHub</option>
+                    <option value="linkedin">LinkedIn</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="youtube">YouTube</option>
+                    <option value="gitlab">GitLab</option>
+                </select>
+                <label for="link-${linkIndex}">Link</label>
+                <input type="url" id="link-${linkIndex}" required>
+                <button type="button" class="remove-link-btn">Remove</button>
+            `;
+          linkForm.appendChild(newLink);
+
+          newLink
+            .querySelector(".remove-link-btn")
+            .addEventListener("click", function () {
+              linkForm.removeChild(newLink);
+            });
+        });
+
+      document
+        .getElementById("links-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          const links = [];
+          for (let i = 1; i <= linkIndex; i++) {
+            const platform = document.getElementById(`platform-${i}`);
+            const link = document.getElementById(`link-${i}`);
+            if (platform && link) {
+              links.push({
+                platform: platform.value,
+                link: link.value,
+              });
+            }
+          }
+          localStorage.setItem("links", JSON.stringify(links));
+          alert("Links saved!");
+        });
+    </script> -->
+    <script src="js/add-links.js"></script>
+  </body>
+</html>

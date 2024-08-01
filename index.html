@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevLinks</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+  </head>
+  <body>
+    <div>
+      <header id="navbar">
+        <nav id="navbar-id">
+          <div class="logo">
+            <img src="images/devlinks-logo.svg" alt="DevLinks Logo" />
+          </div>
+
+          <ul>
+            <li>
+              <a href="add-links.html">
+                <img
+                  src="images/link-icon.png"
+                  alt="Links Icon"
+                  class="link-icon"
+                />
+                Links
+              </a>
+            </li>
+            <li>
+              <a href="profile.html">
+                <img
+                  src="images/user-icon.png"
+                  alt="Links Icon"
+                  class="link-icon"
+                />
+                Profile Details
+              </a>
+            </li>
+
+            <li><a class="preview" href="share.html">Preview</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <main>
+      <section class="intro">
+        <h2>Welcome to DevLinks</h2>
+        <p>
+          DevLinks helps you manage and share your profile and links
+          effortlessly. Start by setting up your profile and adding your
+          favorite links.
+        </p>
+        <div class="cta-buttons">
+          <a href="profile.html" class="btn">Get Started</a>
+          <a href="add-links.html" class="btn">Add Links</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 DevLinks. All rights reserved.</p>
+    </footer>
+    <!-- <script>
+      // Load the navbar
+      fetch("navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+        });
+    </script> -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

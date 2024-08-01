@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Details</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="css/profile-container.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+  </head>
+  <body>
+    <div class="full-section">
+      <div class="header">
+        <header id="navbar">
+          <nav id="navbar-id">
+            <div class="logo">
+              <img src="images/devlinks-logo.svg" alt="DevLinks Logo" />
+            </div>
+
+            <ul>
+              <li>
+                <a href="add-links.html">
+                  <img
+                    src="images/link-icon.png"
+                    alt="Links Icon"
+                    class="link-icon"
+                  />
+                  Links
+                </a>
+              </li>
+              <li>
+                <a href="profile.html">
+                  <img
+                    src="images/user-icon.png"
+                    alt="Links Icon"
+                    class="link-icon"
+                  />
+                  Profile Details
+                </a>
+              </li>
+
+              <li><a class="preview" href="share.html">Preview</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+      <div class="main-section">
+        <div class="left">
+          <div class="smartphone">
+            <div class="profile-container">
+              <img src="images/profile-picture.jpeg" alt="Profile Picture" />
+              <span class="name">Joginder Singh</span>
+              <span class="email">jogidnersingh@gmail.com</span>
+              <ul class="links">
+                <li><a href="#" class="github">GitHub</a></li>
+                <li><a href="#" class="linkedin">LinkedIn</a></li>
+                <li><a href="#" class="youtube">YouTube</a></li>
+                <li><a href="#" class="facebook">Facebook</a></li>
+                <li><a href="#" class="gitlab">GitLab</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="container">
+            <h2>Profile Details</h2>
+            <form id="profile-form">
+              <div class="profile-upload-container">
+                <div class="upload-label">
+                  <label for="profile-picture">Profile picture</label>
+                </div>
+                <div class="upload-area">
+                  <input type="file" id="profile-picture" accept="image/*" />
+                  <label for="profile-picture" class="upload-button">
+                    <img
+                      src="images/image-icon.png"
+                      alt="Upload Icon"
+                      class="upload-icon"
+                    />
+                    <span>+ Upload Image</span>
+                  </label>
+                </div>
+                <div class="upload-info">
+                  <p>Image must be below 1024x1024px. Use PNG or JPG format.</p>
+                </div>
+              </div>
+              <div class="enter-details">
+                <div class="form-group">
+                  <label for="first-name">First name*</label>
+                  <input type="text" id="first-name" required />
+                </div>
+                <div class="form-group">
+                  <label for="last-name">Last name*</label>
+                  <input type="text" id="last-name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email*</label>
+                  <input type="email" id="email" required />
+                </div>
+              </div>
+
+              <div class="submit-button">
+                <button type="submit">Save</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/profile.js"></script>
+  </body>
+</html>

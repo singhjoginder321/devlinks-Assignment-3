@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  margin: 0;
+}
+
+.smartphone {
+  margin: 44px;
+  width: 275px;
+  /height: 512px;
+  background-color: #fff;
+  border: 1.5px solid rgb(52, 32, 32);
+  border-radius: 20px;
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.smartphone::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 5px;
+  background: #333;
+  border-radius: 10px;
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.profile-container {
+  /* margin: 44px; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* padding: 20px; */
+  /* border: 1.5px solid rgb(64, 18, 18); */
+}
+
+.name {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 22px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 1px rgb(241, 236, 236);
+  padding: 7px;
+  margin: 9px 0;
+}
+
+.email {
+  font-family: cursive;
+  margin-top: 4px;
+}
+
+.profile-container img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.profile-container h2 {
+  margin: 10px 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.links li {
+  margin: 10px 0;
+}
+
+.links a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 8px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.links .github {
+  background-color: #333;
+}
+
+.links .linkedin {
+  background-color: #0077b5;
+}
+
+.links .youtube {
+  background-color: #ff0000;
+}
+
+.links .facebook {
+  background-color: #316ff6;
+  /* color: #333; */
+}
+
+.links .gitlab {
+  background-color: #fc6d26;
+}
+
+.links a:hover {
+  opacity: 0.8;
+}

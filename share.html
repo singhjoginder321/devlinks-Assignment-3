@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Share Links</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/share.css" />
+    <link rel="stylesheet" href="css/navbar-preview.css" />
+  </head>
+  <body>
+    <header class="navbar-id">
+      <nav id="navbar-preview">
+        <ul>
+          <li class="left-button">
+            <a href="profile.html">Back to Editor</a>
+          </li>
+          <li class="right-button">
+            <a href="#">Share Link</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="left">
+      <div class="smartphone">
+        <div class="profile-container" id="profile-details">
+          <!-- Profile details will be displayed here -->
+          <div class="profile-details-2">
+            <img src="" alt="Profile Picture" id="profile-picture" />
+            <span class="name" id="profile-name"></span>
+            <span class="email" id="profile-email"></span>
+          </div>
+          <div>
+            <ul class="links" id="links-list">
+              <!-- Links will be displayed here -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <script>
+      // Load the navbar
+      fetch("navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+        });
+
+      // Load profile details
+      const profile = JSON.parse(localStorage.getItem("profile"));
+      if (profile) {
+        const profileDetails = document.getElementById("profile-details");
+        if (profile.picture) {
+          const profilePicture = document.createElement("img");
+          profilePicture.src = profile.picture;
+          profilePicture.alt = "Profile Picture";
+          profilePicture.className = "profile-picture";
+          profileDetails.appendChild(profilePicture);
+        }
+        profileDetails.innerHTML += `
+                <p>First Name: ${profile.firstName}</p>
+                <p>Last Name: ${profile.lastName}</p>
+                <p>Email: ${profile.email}</p>
+            `;
+      }
+
+      // Load links
+      const links = JSON.parse(localStorage.getItem("links"));
+      if (links) {
+        const linksList = document.getElementById("links-list");
+        links.forEach((link) => {
+          const linkItem = document.createElement("div");
+          linkItem.innerHTML = `
+                    <p>${link.platform}: <a href="${link.link}" target="_blank">${link.link}</a></p>
+                `;
+          linksList.appendChild(linkItem);
+        });
+      }
+    </script> -->
+    <script src="js/share.js"></script>
+  </body>
+</html>
