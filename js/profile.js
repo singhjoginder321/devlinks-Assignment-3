@@ -47,3 +47,7 @@ function handleProfileFormSubmit(event) {
 
 // Add event listener to profile form
 profileForm.addEventListener("submit", handleProfileFormSubmit);
+
+//change the color of the button
+
+document.getElementById("button-2").classList.add("active");

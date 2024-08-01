@@ -58,3 +58,6 @@ linksFormElement.addEventListener("submit", function (event) {
   localStorage.setItem("links", JSON.stringify(links));
   alert("Links saved!");
 });
+
+//change the color of the button
+document.getElementById("button-1").classList.add("active");
