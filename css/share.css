@@ -106,3 +106,16 @@ body {
   align-items: center;
   margin: 0px 6px;
 }
+
+@media (max-width: 600px) {
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .smartphone {
+    width: auto;
+    margin-left: 17px;
+  }
+}
